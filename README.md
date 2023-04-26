@@ -1,5 +1,5 @@
 # dio-live-dynamodb
-Evoluções : criação de uma tabela playlist, criação de uma coluna PlaylistID na tabela  playlist, arquivo json para salvar as playlist e evolucao do arquivo batch de musicas para inserir mais musicas
+Evoluções : criação de uma tabela playlist, criação de uma coluna PlaylistID na tabela  music, arquivo json para salvar as playlist e evolucao do arquivo batch de musicas para inserir mais musicas
 
 # dio-live-dynamodb
 Repositório para o live coding do dia 30/09/2021 sobre o Amazon DynamoDB
