@@ -1,4 +1,7 @@
 # dio-live-dynamodb
+Evoluções : criação de uma tabela playlist, criação de uma coluna PlaylistID na tabela  playlist, arquivo json para salvar as playlist e evolucao do arquivo batch de musicas para inserir mais musicas
+
+# dio-live-dynamodb
 Repositório para o live coding do dia 30/09/2021 sobre o Amazon DynamoDB
 
 ### Serviço utilizado
@@ -23,15 +26,34 @@ aws dynamodb create-table \
         ReadCapacityUnits=10,WriteCapacityUnits=5
 ```
 
-- Inserir um item
+- Criar a tabela Playlist que vai conter as musicas
 
 ```
-aws dynamodb put-item \
+    aws dynamodb create-table --table-name Playlist --attribute-definitions AttributeName=PlaylistId,AttributeType=S AttributeName=Name,AttributeType=S --key-schema AttributeName=PlaylistId,KeyType=HASH AttributeName=Name,KeyType=RANGE --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5
+
+```
+
+- Adicionar uma nova coluna na tabela Musica
+
+```
+aws dynamodb update-table \
     --table-name Music \
-    --item file://itemmusic.json \
+    --attribute-definitions \
+        AttributeName=PlaylistId,AttributeType=S \
+    --stream-specification StreamEnabled=true,StreamViewType=NEW_AND_OLD_IMAGES \
+    --attribute-definitions \
+        AttributeName=PlaylistId,AttributeType=S
+
 ```
 
-- Inserir múltiplos itens
+- Inserir PlayList
+
+aws dynamodb put-item \
+    --table-name Playlist \
+    --item file://itemplaylist.json \
+
+
+- Inserir múltiplos musicas 
 
 ```
 aws dynamodb batch-write-item \

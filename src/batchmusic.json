@@ -3,32 +3,118 @@
         {
             "PutRequest": {
                 "Item": {
-                  "Artist": {"S": "Iron Maiden"},
-                  "SongTitle": {"S": "Wasting Love"},
-                  "AlbumTitle": {"S": "Fear of the Dark Live"},
-                  "SongYear": {"S": "1992"}
+                  "Artist": {"S": "Led Zeppelin"},
+                  "SongTitle": {"S": "Stairway to Heaven"},
+                  "AlbumTitle": {"S": "Led Zeppelin IV"},
+                  "SongYear": {"S": "1971"},
+                  "PlaylistId": {"S": "1"}
+                
                 }
             }
         },
         {
             "PutRequest": {
                 "Item": {
-                  "Artist": {"S": "Iron Maiden"},
-                  "SongTitle": {"S": "Weekend Warrior"},
-                  "AlbumTitle": {"S": "Fear of the Dark"},
-                  "SongYear": {"S": "1992"}
+                  "Artist": {"S": "Queen"},
+                  "SongTitle": {"S": "Bohemian Rhapsody"},
+                  "AlbumTitle": {"S": "A Night at the Opera"},
+                  "SongYear": {"S": "1975"},
+                  "PlaylistId": {"S": "1"}
                 }
             }
         },
         {
             "PutRequest": {
                 "Item": {
-                  "Artist": {"S": "Iron Maiden"},
-                  "SongTitle": {"S": "Fear of the Dark"},
-                  "AlbumTitle": {"S": "Fear of the Dark Tour"},
-                  "SongYear": {"S": "1992"}
+                  "Artist": {"S": "Eagles"},
+                  "SongTitle": {"S": "Hotel California"},
+                  "AlbumTitle": {"S": "Hotel California"},
+                  "SongYear": {"S": "1976"},
+                  "PlaylistId": {"S": "1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Guns N' Roses"},
+                  "SongTitle": {"S": "Sweet Child O' Mine"},
+                  "AlbumTitle": {"S": "Appetite for Destruction"},
+                  "SongYear": {"S": "1987"},
+                  "PlaylistId": {"S": "1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "AC/DC"},
+                  "SongTitle": {"S": "Back in Black"},
+                  "AlbumTitle": {"S": "Back in Black"},
+                  "SongYear": {"S": "1980"},
+                  "PlaylistId": {"S": "1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Led Zeppelin"},
+                  "SongTitle": {"S": "Kashmir"},
+                  "AlbumTitle": {"S": "Physical Graffiti"},
+                  "SongYear": {"S": "1975"},
+                  "PlaylistId": {"S": "1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "AC/DC"},
+                  "SongTitle": {"S": "Highway to Hell"},
+                  "AlbumTitle": {"S": "Highway to Hell"},
+                  "SongYear": {"S": "1979"},
+                  "PlaylistId": {"S": "1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Black Sabbath"},
+                  "SongTitle": {"S": "Paranoid"},
+                  "AlbumTitle": {"S": "Paranoid"},
+                  "SongYear": {"S": "1970"},
+                  "PlaylistId": {"S": "1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Metallica"},
+                  "SongTitle": {"S": "Enter Sandman"},
+                  "AlbumTitle": {"S": "Metallica"},
+                  "SongYear": {"S": "1991"},
+                  "PlaylistId": {"S": "1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Deep Purple"},
+                  "SongTitle": {"S": "Smoke on the Water"},
+                  "AlbumTitle": {"S": "Machine Head"},
+                  "SongYear": {"S": "1972"},
+                  "PlaylistId": {"S": "1"}
                 }
             }
         }
-      ]
+      ]        
 }
+        
+
+
+
+  
